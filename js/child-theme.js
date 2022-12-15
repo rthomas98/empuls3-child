@@ -6743,6 +6743,11 @@
 	  }
 	})();
 
+	// Add your custom JS here.
+	(function ($) {
+	  $(document).ready(function ($) {});
+	})(jQuery);
+
 	exports.Alert = alert;
 	exports.Button = button;
 	exports.Carousel = carousel;
