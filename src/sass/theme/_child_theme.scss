@@ -1,3 +1,6 @@
+html, body {
+  overflow-x: hidden;
+}
 .circle-sm {
   width: 48px;
   height: 48px;
@@ -22,6 +25,11 @@
   border-radius: 50%
 }
 
+@include media-breakpoint-down(lg) {
+  .circle-sm, .circle-md, .circle-lg, .circle-lg-x {
+    display: none;
+  }
+}
 
 
 .section-index {

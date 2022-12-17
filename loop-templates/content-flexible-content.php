@@ -44,6 +44,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/our-strengths.php' );
         endif;
 
+        if ( get_row_layout() == 'we_believe_in' ):
+            include( get_stylesheet_directory() . '/acf-blocks/we-believe.php' );
+        endif;
+
         if ( get_row_layout() == 'recent_projects' ):
             include( get_stylesheet_directory() . '/acf-blocks/recent-projects.php' );
         endif;

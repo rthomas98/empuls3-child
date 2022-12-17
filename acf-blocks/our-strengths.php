@@ -1,5 +1,8 @@
-<section class="our-strengths py-5">
-    <div class="container">
+<section class="our-strengths py-5 position-relative">
+    <div class="circle-sm"></div>
+    <div class="circle-md"></div>
+    <div class="circle-lg"></div>
+    <div class="container section-index">
         <div class="row mb-5">
             <div class="col">
                 <p class="lead">
