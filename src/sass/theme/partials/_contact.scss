@@ -1,0 +1,48 @@
+.contact-form {
+
+  background-color: $light-grey;
+
+  .lead {
+    color: $pink;
+  }
+
+  .form-holder {
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  form.fluent_form_3 .ff-btn-submit {
+    background-color: $yellow;
+    color: $black;
+    display: block;
+    width: 100%;
+    padding: 20px 20px;
+    @extend .btn-lg;
+  }
+
+  .fluentform .ff_btn_style {
+    border-color: $yellow;
+    @extend .btn-lg;
+  }
+
+  .stripe-right {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    z-index: 0;
+  }
+
+  .circle-lg-x {
+    background-color: white;
+    position: absolute;
+    top: -20%;
+    left: -4%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .circle-lg-x, .stripe-right {
+      display: none;
+    }
+  }
+
+}

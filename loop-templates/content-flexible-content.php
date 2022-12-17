@@ -9,6 +9,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/home-banner.php' );
         endif;
 
+        if ( get_row_layout() == 'extended_header' ):
+            include( get_stylesheet_directory() . '/acf-blocks/extended-header.php' );
+        endif;
+
         if ( get_row_layout() == 'footer_call_to_action' ):
             include( get_stylesheet_directory() . '/acf-blocks/footer-cta.php' );
         endif;
@@ -34,6 +38,10 @@ if ( get_field( 'blocks' ) ) :
 
         if ( get_row_layout() == 'contact_form' ):
             include( get_stylesheet_directory() . '/acf-blocks/contact.php' );
+        endif;
+
+        if ( get_row_layout() == 'our_strengths' ):
+            include( get_stylesheet_directory() . '/acf-blocks/our-strengths.php' );
         endif;
 
         if ( get_row_layout() == 'recent_projects' ):
