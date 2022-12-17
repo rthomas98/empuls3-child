@@ -1,6 +1,6 @@
-<section class="industries py-5">
+<section class="industries py-5 position-relative">
     <img class="stripe-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/stripe-right.svg" alt="a red line"> 
-    <div class="container">
+    <div class="container section-index">
         <div class="row mb-5">
             <div class="col text-center">
                 <p class="lead">

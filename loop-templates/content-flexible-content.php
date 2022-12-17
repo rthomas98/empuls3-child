@@ -48,6 +48,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/we-believe.php' );
         endif;
 
+        if ( get_row_layout() == 'team' ):
+            include( get_stylesheet_directory() . '/acf-blocks/team.php' );
+        endif;
+
         if ( get_row_layout() == 'recent_projects' ):
             include( get_stylesheet_directory() . '/acf-blocks/recent-projects.php' );
         endif;
