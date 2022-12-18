@@ -13,6 +13,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/extended-header.php' );
         endif;
 
+        if ( get_row_layout() == 'three_slot_header' ):
+            include( get_stylesheet_directory() . '/acf-blocks/three-slot-header.php' );
+        endif;
+
         if ( get_row_layout() == 'footer_call_to_action' ):
             include( get_stylesheet_directory() . '/acf-blocks/footer-cta.php' );
         endif;
@@ -23,6 +27,10 @@ if ( get_field( 'blocks' ) ) :
 
         if ( get_row_layout() == 'services_tiles' ):
             include( get_stylesheet_directory() . '/acf-blocks/services-tiles.php' );
+        endif;
+
+        if ( get_row_layout() == 'other_services' ):
+            include( get_stylesheet_directory() . '/acf-blocks/other-services.php' );
         endif;
 
         if ( get_row_layout() == 'industries' ):

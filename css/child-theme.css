@@ -14969,6 +14969,10 @@ html, body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .circle-sm {
   width: 48px;
   height: 48px;
@@ -15001,6 +15005,10 @@ html, body {
 .section-index {
   z-index: 100;
   position: relative;
+}
+
+.page-id-75 .contact-form .circle-lg-x {
+  display: none;
 }
 
 .has-blue-color,
@@ -15531,6 +15539,26 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   color: #BD1550;
 }
 
+.three-slot-header {
+  background-color: #F8F9FA;
+}
+.three-slot-header .lead {
+  color: #BD1550;
+}
+.three-slot-header p {
+  color: #9B9B9B;
+}
+.three-slot-header .white-shape {
+  position: absolute;
+  top: 10%;
+}
+.three-slot-header .stripe-right {
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  z-index: 10;
+}
+
 .footer {
   background-color: white;
 }
@@ -15662,7 +15690,10 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .services-tiles .tile {
   background-color: white;
   text-decoration: none;
+  border: 1px solid #D9D9D9;
   border-radius: 20px;
+  min-height: 467px;
+  height: 467px;
 }
 .services-tiles .tile .icon-bg {
   background-color: #F8F9FA;
@@ -15680,9 +15711,11 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 .services-tiles .tile h3, .services-tiles .tile .h3 {
   color: #231B53;
+  text-decoration: none;
 }
 .services-tiles .tile p {
   color: #9B9B9B;
+  text-decoration: none;
 }
 .services-tiles .tile:hover {
   background-color: #231B53;
@@ -15693,9 +15726,40 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 .services-tiles .tile:hover h3, .services-tiles .tile:hover .h3 {
   color: #BD1550;
+  text-decoration: none;
 }
 .services-tiles .tile:hover p {
   color: white;
+  text-decoration: none;
+}
+
+.other-services {
+  background-color: #FFC259;
+}
+.other-services .lead {
+  color: #BD1550;
+}
+.other-services h2, .other-services .h2 {
+  color: #231B53;
+}
+.other-services .tile {
+  border-radius: 20px;
+  background-color: white;
+}
+.other-services .tile h3, .other-services .tile .h3 {
+  color: #BD1550;
+}
+.other-services .tile p {
+  min-height: 72px;
+  height: 72px;
+}
+@media (max-width: 991.98px) {
+  .other-services .tile {
+    height: auto;
+  }
+  .other-services .tile p {
+    height: auto;
+  }
 }
 
 .testimonials {

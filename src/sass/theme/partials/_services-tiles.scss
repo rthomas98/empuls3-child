@@ -11,7 +11,10 @@
     .tile {
         background-color: white;
         text-decoration: none;
+        border: 1px solid $grey;
         border-radius: 20px;
+        min-height: 467px;
+        height: 467px;
 
         .icon-bg {
             background-color: $light-grey;
@@ -33,10 +36,12 @@
 
         h3 {
             color: $purple;
+            text-decoration: none;
         } 
 
         p {
             color: $text-muted;
+            text-decoration: none;
         }
 
         &:hover {
@@ -49,10 +54,12 @@
 
             h3 {
                 color: $pink;
+                text-decoration: none;
             }
 
             p {
                 color: white;
+                text-decoration: none;
             }
         }
     }
