@@ -18,9 +18,9 @@
 			
 			
 			<?php if ( have_rows( 'tiles' ) ) : ?>
-                <div class="row mb-5 gx-5">
+                <div class="row mb-5 d-flex align-items-center">
 				<?php while ( have_rows( 'tiles' ) ) : the_row(); ?>
-					<a href="<?php the_sub_field( 'link' ); ?>" class=" col-sm-12 col-md-6 col-lg-4 mb-4">
+					<a href="<?php the_sub_field( 'link' ); ?>" class="col-sm-12 col-md-6 col-lg-4 mb-4">
                    <div class="tile text-center p-4">
                        <div class="icon-bg">
                            <i class="<?php the_sub_field( 'icon' ); ?>"></i>
