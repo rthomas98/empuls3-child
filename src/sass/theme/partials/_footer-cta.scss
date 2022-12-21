@@ -3,6 +3,14 @@
     h2 {
         color: white;
         z-index: 100;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    @include media-breakpoint-down(lg) {
+        h2 {
+            width: 100%;
+        }
     }
 
     .footer-btn {
