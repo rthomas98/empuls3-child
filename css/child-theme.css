@@ -15559,6 +15559,24 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   z-index: 10;
 }
 
+.simple-header {
+  min-height: 450px;
+}
+.simple-header .lead {
+  color: #263645;
+}
+.simple-header h1, .simple-header .h1 {
+  color: #FFC259;
+  width: 50%;
+  margin: 0 auto;
+}
+.simple-header .stripe-right {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: 0;
+}
+
 .footer {
   background-color: white;
 }
