@@ -1,7 +1,4 @@
-.contact-form {
-
-  background-color: $light-grey;
-
+.contact-header {
   .lead {
     color: $pink;
   }
@@ -9,10 +6,6 @@
   .form-holder {
     background-color: white;
     border-radius: 20px;
-
-    h2 {
-      font-size: 1.75rem;
-    }
   }
 
   form.fluent_form_3 .ff-btn-submit {
@@ -29,24 +22,39 @@
     @extend .btn-lg;
   }
 
-  .stripe-right {
+  a {
+    color: $pink;
+  }
+
+  .stripe-left {
     position: absolute;
     top: 25%;
-    right: 0;
-    z-index: 0;
+    left: 0;
+    z-index: 10;
   }
 
-  .circle-lg-x {
-    background-color: white;
-    position: absolute;
-    top: -20%;
-    left: -4%;
-  }
+  .contact-tab {
+    background-color: $purple;
+    border-radius: 20px;
+    i {
+      color: $yellow;
+      font-size: 44px;
+    }
 
-  @include media-breakpoint-down(lg) {
-    .circle-lg-x, .stripe-right {
-      display: none;
+    h3 {
+      color: white;
+      margin: 0;
+    }
+    p {
+      color: white;
+    }
+
+    a {
+      color: $pink;
+
+      &:hover {
+        opacity: .5;
+      }
     }
   }
-
 }

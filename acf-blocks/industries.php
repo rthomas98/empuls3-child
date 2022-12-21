@@ -20,7 +20,8 @@
             <div class="col-sm-12 col-md-12 col-lg-6 section-index">
                 <?php if ( have_rows( 'industry' ) ) : ?>
                     <?php while ( have_rows( 'industry' ) ) : the_row(); ?>
-                        <div class="industry mb-5">
+                        <div class="industry mb-5 p-3">
+
                         <h3>
                             <?php the_sub_field( 'title' ); ?>
                         </h3>

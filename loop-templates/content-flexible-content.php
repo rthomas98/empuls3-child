@@ -21,6 +21,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/three-slot-header.php' );
         endif;
 
+        if ( get_row_layout() == 'contact_header' ):
+            include( get_stylesheet_directory() . '/acf-blocks/contact-header.php' );
+        endif;
+
         if ( get_row_layout() == 'footer_call_to_action' ):
             include( get_stylesheet_directory() . '/acf-blocks/footer-cta.php' );
         endif;
