@@ -1,0 +1,94 @@
+<?php
+/**
+ * Single post partial template
+ *
+ * @package Understrap
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+?>
+
+<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+
+    <?php
+
+    if ( get_field( 'blocks' ) ) :
+
+        while ( has_sub_field( 'blocks', get_the_ID() ) ) :
+
+
+            if ( get_row_layout() == 'home_banner' ):
+                include( get_stylesheet_directory() . '/acf-blocks/home-banner.php' );
+            endif;
+
+            if ( get_row_layout() == 'extended_header' ):
+                include( get_stylesheet_directory() . '/acf-blocks/extended-header.php' );
+            endif;
+
+            if ( get_row_layout() == 'simple_banner' ):
+                include( get_stylesheet_directory() . '/acf-blocks/simple-banner.php' );
+            endif;
+
+            if ( get_row_layout() == 'three_slot_header' ):
+                include( get_stylesheet_directory() . '/acf-blocks/three-slot-header.php' );
+            endif;
+
+            if ( get_row_layout() == 'contact_header' ):
+                include( get_stylesheet_directory() . '/acf-blocks/contact-header.php' );
+            endif;
+
+            if ( get_row_layout() == 'header_image_left' ):
+                include( get_stylesheet_directory() . '/acf-blocks/header-img-left.php' );
+            endif;
+
+            if ( get_row_layout() == 'footer_call_to_action' ):
+                include( get_stylesheet_directory() . '/acf-blocks/footer-cta.php' );
+            endif;
+
+            if ( get_row_layout() == 'double_images' ):
+                include( get_stylesheet_directory() . '/acf-blocks/double-imgs.php' );
+            endif;
+
+            if ( get_row_layout() == 'services_tiles' ):
+                include( get_stylesheet_directory() . '/acf-blocks/services-tiles.php' );
+            endif;
+
+            if ( get_row_layout() == 'other_services' ):
+                include( get_stylesheet_directory() . '/acf-blocks/other-services.php' );
+            endif;
+
+            if ( get_row_layout() == 'industries' ):
+                include( get_stylesheet_directory() . '/acf-blocks/industries.php' );
+            endif;
+
+            if ( get_row_layout() == 'testimonials' ):
+                include( get_stylesheet_directory() . '/acf-blocks/testimonials.php' );
+            endif;
+
+
+            if ( get_row_layout() == 'contact_form' ):
+                include( get_stylesheet_directory() . '/acf-blocks/contact.php' );
+            endif;
+
+            if ( get_row_layout() == 'our_strengths' ):
+                include( get_stylesheet_directory() . '/acf-blocks/our-strengths.php' );
+            endif;
+
+            if ( get_row_layout() == 'we_believe_in' ):
+                include( get_stylesheet_directory() . '/acf-blocks/we-believe.php' );
+            endif;
+
+            if ( get_row_layout() == 'team' ):
+                include( get_stylesheet_directory() . '/acf-blocks/team.php' );
+            endif;
+
+            if ( get_row_layout() == 'recent_projects' ):
+                include( get_stylesheet_directory() . '/acf-blocks/recent-projects.php' );
+            endif;
+
+        endwhile;
+    endif;
+    ?>
+
+</article><!-- #post-## -->

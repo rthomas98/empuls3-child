@@ -15458,6 +15458,11 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .main-nav .navbar-brand span:hover {
   color: #BD1550;
 }
+@media (max-width: 991.98px) {
+  .main-nav .navbar-brand span {
+    display: none;
+  }
+}
 .main-nav .nav-link {
   color: #9B9B9B;
 }
@@ -15627,6 +15632,10 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 .contact-header .contact-tab a:hover {
   opacity: 0.5;
+}
+
+.header-img-left .lead {
+  color: #BD1550;
 }
 
 .footer {

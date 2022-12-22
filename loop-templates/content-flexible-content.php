@@ -25,6 +25,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/contact-header.php' );
         endif;
 
+        if ( get_row_layout() == 'header_image_left' ):
+            include( get_stylesheet_directory() . '/acf-blocks/header-img-left.php' );
+        endif;
+
         if ( get_row_layout() == 'footer_call_to_action' ):
             include( get_stylesheet_directory() . '/acf-blocks/footer-cta.php' );
         endif;
@@ -44,8 +48,6 @@ if ( get_field( 'blocks' ) ) :
         if ( get_row_layout() == 'industries' ):
             include( get_stylesheet_directory() . '/acf-blocks/industries.php' );
         endif;
-
-
 
         if ( get_row_layout() == 'testimonials' ):
             include( get_stylesheet_directory() . '/acf-blocks/testimonials.php' );

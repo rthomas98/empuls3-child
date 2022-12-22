@@ -15,6 +15,12 @@
         }
     }
 
+    @include media-breakpoint-down(lg) {
+        .navbar-brand span {
+            display: none;
+        }
+    }
+
     .nav-link {
         color: $text-muted;
 
