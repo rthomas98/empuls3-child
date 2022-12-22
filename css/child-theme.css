@@ -15649,6 +15649,16 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   }
 }
 
+.content-img-left .lead {
+  color: #BD1550;
+}
+.content-img-left h2, .content-img-left .h2 {
+  color: #FFC259;
+}
+.content-img-left img {
+  border-radius: 20px;
+}
+
 .footer {
   background-color: white;
 }

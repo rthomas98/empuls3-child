@@ -42,6 +42,10 @@ defined( 'ABSPATH' ) || exit;
                 include( get_stylesheet_directory() . '/acf-blocks/header-img-left.php' );
             endif;
 
+            if ( get_row_layout() == 'content_image_left' ):
+                include( get_stylesheet_directory() . '/acf-blocks/content-img-left.php' );
+            endif;
+
             if ( get_row_layout() == 'footer_call_to_action' ):
                 include( get_stylesheet_directory() . '/acf-blocks/footer-cta.php' );
             endif;
