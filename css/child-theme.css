@@ -15659,6 +15659,68 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   border-radius: 20px;
 }
 
+.process-tabs {
+  background-color: #231B53;
+}
+.process-tabs .stripe-left {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 10;
+}
+.process-tabs .lead {
+  color: white;
+}
+.process-tabs h2, .process-tabs .h2 {
+  color: #FFC259;
+}
+.process-tabs .nav-tabs {
+  border: none;
+}
+.process-tabs .nav-pills .nav-link.active, .process-tabs .nav-pills .show > .nav-link {
+  color: white;
+  background-color: #BD1550;
+  position: relative;
+}
+.process-tabs .nav-pills .nav-link.active i, .process-tabs .nav-pills .show > .nav-link i {
+  color: #FFC259;
+}
+.process-tabs .nav-pills .nav-link.active:after, .process-tabs .nav-pills .nav-link.active:after, .process-tabs .nav-pills .show > .nav-link:after, .process-tabs .nav-pills .show > .nav-link:after {
+  z-index: -1;
+  position: absolute;
+  top: 98.1%;
+  left: 65%;
+  margin-left: -25%;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: solid 20px #BD1550;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+@media (max-width: 767.98px) {
+  .process-tabs .nav-pills .nav-link.active:after, .process-tabs .nav-pills .nav-link.active:after, .process-tabs .nav-pills .show > .nav-link:after, .process-tabs .nav-pills .show > .nav-link:after {
+    display: none;
+  }
+}
+.process-tabs .nav-tabs .nav-link {
+  margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+  background-color: white;
+  border: none;
+  color: #263645;
+}
+.process-tabs .tab-content h3, .process-tabs .tab-content .h3 {
+  color: white;
+}
+.process-tabs .tab-content p {
+  color: white;
+}
+@media (max-width: 991.98px) {
+  .process-tabs .stripe-left {
+    display: none;
+  }
+}
+
 .footer {
   background-color: white;
 }
@@ -15791,6 +15853,10 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .services-tiles .h2 {
   color: #263645;
 }
+.services-tiles .text-muted {
+  width: 50%;
+  margin: 0 auto;
+}
 .services-tiles .tile {
   background-color: white;
   text-decoration: none;
@@ -15835,6 +15901,11 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .services-tiles .tile:hover p {
   color: white;
   text-decoration: none;
+}
+@media (max-width: 991.98px) {
+  .services-tiles .text-muted {
+    width: 100%;
+  }
 }
 
 .other-services {

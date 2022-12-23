@@ -8,6 +8,11 @@
         color: $black;
     }
 
+    .text-muted {
+        width: 50%;
+        margin: 0 auto;
+    }
+
     .tile {
         background-color: white;
         text-decoration: none;
@@ -61,6 +66,12 @@
                 color: white;
                 text-decoration: none;
             }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .text-muted {
+            width: 100%;
         }
     }
 }
