@@ -42,6 +42,10 @@ defined( 'ABSPATH' ) || exit;
                 include( get_stylesheet_directory() . '/acf-blocks/contact-header.php' );
             endif;
 
+            if ( get_row_layout() == 'content_three_tabs' ):
+                include( get_stylesheet_directory() . '/acf-blocks/content-three-tabs.php' );
+            endif;
+
             if ( get_row_layout() == 'header_image_left' ):
                 include( get_stylesheet_directory() . '/acf-blocks/header-img-left.php' );
             endif;

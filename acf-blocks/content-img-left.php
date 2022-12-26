@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="row d-flex align-items-center">
-            <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="col-sm-12 col-md-12 col-lg-6 mb-5 mb-sm-5 mb-md-5 mb-lg-0">
                 <?php the_sub_field( 'content' ); ?>
 
                 <?php $button_link = get_sub_field( 'button_link' ); ?>
