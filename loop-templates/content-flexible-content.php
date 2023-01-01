@@ -37,6 +37,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/content-img.left.php' );
         endif;
 
+        if ( get_row_layout() == 'full_image_banner' ):
+            include( get_stylesheet_directory() . '/acf-blocks/full-img-banner.php' );
+        endif;
+
         if ( get_row_layout() == 'footer_call_to_action' ):
             include( get_stylesheet_directory() . '/acf-blocks/footer-cta.php' );
         endif;

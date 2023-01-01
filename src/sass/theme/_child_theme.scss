@@ -51,3 +51,33 @@ a {
 .page-id-79 {
   background-color: $light-grey;
 }
+
+.postid-71 {
+  .main-nav .navbar-brand span {
+    color: white;
+  }
+
+  .main-nav .nav-link {
+    color: white;
+  }
+
+}
+
+.postid-71 {
+  .scrolled .navbar-brand span {
+    color: $black !important;
+
+    &:hover {
+      color: $pink !important;
+    }
+
+  }
+
+  .scrolled .nav-link {
+    color: $black !important;
+
+    &:hover {
+      color: $pink !important;
+    }
+  }
+}

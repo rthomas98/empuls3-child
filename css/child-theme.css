@@ -15015,6 +15015,26 @@ a {
   background-color: #F8F9FA;
 }
 
+.postid-71 .main-nav .navbar-brand span {
+  color: white;
+}
+.postid-71 .main-nav .nav-link {
+  color: white;
+}
+
+.postid-71 .scrolled .navbar-brand span {
+  color: #263645 !important;
+}
+.postid-71 .scrolled .navbar-brand span:hover {
+  color: #BD1550 !important;
+}
+.postid-71 .scrolled .nav-link {
+  color: #263645 !important;
+}
+.postid-71 .scrolled .nav-link:hover {
+  color: #BD1550 !important;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
@@ -15760,6 +15780,51 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .content-three-tabs .tile p {
   color: #9B9B9B;
   text-decoration: none;
+}
+
+.full-img-banner {
+  height: 75vh;
+}
+.full-img-banner .stripe-left {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: 0;
+}
+.full-img-banner h1, .full-img-banner .h1 {
+  color: #FFC259;
+}
+.full-img-banner .lead {
+  color: white;
+}
+.full-img-banner p {
+  color: white;
+}
+
+.purple-boxes {
+  background-color: #231B53;
+}
+.purple-boxes .icon-bg {
+  background-color: #F8F9FA;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.purple-boxes .icon-bg i {
+  color: #FFC259;
+  font-size: 2rem;
+}
+.purple-boxes h2, .purple-boxes .h2 {
+  color: #BD1550;
+  font-size: 1.5em;
+}
+.purple-boxes p {
+  color: white;
+  min-height: 50px;
 }
 
 .footer {
