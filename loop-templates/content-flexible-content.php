@@ -25,6 +25,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/three-slot-header.php' );
         endif;
 
+        if ( get_row_layout() == 'images_slots' ):
+            include( get_stylesheet_directory() . '/acf-blocks/img-slots.php' );
+        endif;
+
         if ( get_row_layout() == 'contact_header' ):
             include( get_stylesheet_directory() . '/acf-blocks/contact-header.php' );
         endif;

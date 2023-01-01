@@ -15827,6 +15827,30 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   min-height: 50px;
 }
 
+.img-slots h2, .img-slots .h2 {
+  color: #FFC259;
+  margin: 0 auto;
+  width: 75%;
+}
+.img-slots .lead {
+  color: #BD1550;
+}
+.img-slots .slots {
+  background-color: #F8F9FA;
+  border-radius: 20px;
+}
+.img-slots .slots h3, .img-slots .slots .h3 {
+  color: #BD1550;
+}
+.img-slots .slots p {
+  min-height: 75px;
+}
+@media (max-width: 767.98px) {
+  .img-slots h2, .img-slots .h2 {
+    width: 100%;
+  }
+}
+
 .footer {
   background-color: white;
 }
