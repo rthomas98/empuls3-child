@@ -1,19 +1,31 @@
 <section class="industries py-5 position-relative">
     <img class="stripe-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/stripe-right.svg" alt="a red line"> 
     <div class="container section-index">
+
+        <?php if( get_sub_field('sub_header') ): ?>
         <div class="row mb-5">
             <div class="col text-center">
-                <p class="lead">
-                    <?php the_sub_field( 'sub_header' ); ?>
-                </p>
-                <h2 class="display-4">
-                    <?php the_sub_field( 'header' ); ?>
-                </h2>
-                <p class="text-muted">
-                    <?php the_sub_field( 'content' ); ?>
-                </p>
+
+                <?php if( get_sub_field('sub_header') ): ?>
+                    <p class="lead">
+                        <?php the_sub_field( 'sub_header' ); ?>
+                    </p>
+                <?php endif; ?>
+
+                <?php if(get_sub_field('header') ): ?>
+                    <h2 class="display-4">
+                        <?php the_sub_field( 'header' ); ?>
+                    </h2>
+                <?php endif; ?>
+
+                <?php if( get_sub_field() ): ?>
+                    <p class="text-muted">
+                        <?php the_sub_field( 'content' ); ?>
+                    </p>
+                <?php endif; ?>
             </div>
         </div>
+        <?php endif; ?>
     
 
         <div class="row d-flex align-items-center">
