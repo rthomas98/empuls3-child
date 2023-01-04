@@ -13,7 +13,7 @@
                     </a>
                 </p>
 
-                <img class="mt-4 guy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/guy-with-laptop.svg" alt="a guy on a laptop" width="400"> 
+                <img class="mt-4 guy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer-guy.png" alt="a guy on a laptop" width="400">
         </div>
     </div>
 
