@@ -21,6 +21,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/process-tabs.php' );
         endif;
 
+        if ( get_row_layout() == 'list_section' ):
+            include( get_stylesheet_directory() . '/acf-blocks/list-section.php' );
+        endif;
+
         if ( get_row_layout() == 'three_slot_header' ):
             include( get_stylesheet_directory() . '/acf-blocks/three-slot-header.php' );
         endif;

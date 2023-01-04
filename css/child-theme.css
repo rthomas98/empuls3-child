@@ -15851,6 +15851,26 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   }
 }
 
+.list-section .lead {
+  color: #BD1550;
+}
+.list-section .content {
+  width: 50%;
+}
+.list-section ul li {
+  margin-bottom: 30px;
+}
+.list-section ul li i {
+  color: #BD1550;
+  font-size: 35px;
+  margin-right: 20px;
+}
+@media (max-width: 991.98px) {
+  .list-section .content {
+    width: 100%;
+  }
+}
+
 .footer {
   background-color: white;
 }
