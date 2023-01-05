@@ -29,6 +29,7 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/content-left-four-slots.php' );
         endif;
 
+
         if ( get_row_layout() == 'list_section' ):
             include( get_stylesheet_directory() . '/acf-blocks/list-section.php' );
         endif;
@@ -39,6 +40,10 @@ if ( get_field( 'blocks' ) ) :
 
         if ( get_row_layout() == 'images_slots' ):
             include( get_stylesheet_directory() . '/acf-blocks/img-slots.php' );
+        endif;
+
+        if ( get_row_layout() == 'image_background_cta' ):
+            include( get_stylesheet_directory() . '/acf-blocks/img-background-cta.php' );
         endif;
 
         if ( get_row_layout() == 'contact_header' ):

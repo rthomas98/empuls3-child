@@ -38,6 +38,10 @@ defined( 'ABSPATH' ) || exit;
                 include( get_stylesheet_directory() . '/acf-blocks/img-slots.php' );
             endif;
 
+            if ( get_row_layout() == 'image_background_cta' ):
+                include( get_stylesheet_directory() . '/acf-blocks/img-background-cta.php' );
+            endif;
+
             if ( get_row_layout() == 'process_tabs' ):
                 include( get_stylesheet_directory() . '/acf-blocks/process-tabs.php' );
             endif;

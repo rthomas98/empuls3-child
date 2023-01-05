@@ -15716,6 +15716,35 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   }
 }
 
+.img-background-cta {
+  width: 100%;
+  height: 650px;
+  min-height: 650px;
+  position: relative;
+}
+.img-background-cta .lead {
+  color: white;
+}
+.img-background-cta h2, .img-background-cta .h2 {
+  color: #FFC259;
+}
+.img-background-cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  background: #263645;
+}
+@media (max-width: 991.98px) {
+  .img-background-cta .img-background-cta {
+    height: 100%;
+    min-height: 100%;
+  }
+}
+
 .content-img-left .lead {
   color: #BD1550;
 }
