@@ -25,6 +25,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/process-tabs.php' );
         endif;
 
+        if ( get_row_layout() == 'content_left_four_slots' ):
+            include( get_stylesheet_directory() . '/acf-blocks/content-left-four-slots.php' );
+        endif;
+
         if ( get_row_layout() == 'list_section' ):
             include( get_stylesheet_directory() . '/acf-blocks/list-section.php' );
         endif;

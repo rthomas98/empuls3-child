@@ -15690,6 +15690,32 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   }
 }
 
+.content-left-four-slots h1, .content-left-four-slots .h1 {
+  color: #231B53;
+}
+.content-left-four-slots .lead {
+  color: #BD1550;
+}
+.content-left-four-slots .slot {
+  background-color: #F8F9FA;
+  border-radius: 20px;
+}
+.content-left-four-slots .slot h3, .content-left-four-slots .slot .h3 {
+  color: #BD1550;
+  font-size: 1.2em;
+}
+.content-left-four-slots .stripe-left {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 10;
+}
+@media (max-width: 991.98px) {
+  .content-left-four-slots .stripe-left {
+    display: none;
+  }
+}
+
 .content-img-left .lead {
   color: #BD1550;
 }
