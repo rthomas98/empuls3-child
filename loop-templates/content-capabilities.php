@@ -42,6 +42,10 @@ defined( 'ABSPATH' ) || exit;
                 include( get_stylesheet_directory() . '/acf-blocks/img-background-cta.php' );
             endif;
 
+            if ( get_row_layout() == 'color_background' ):
+                include( get_stylesheet_directory() . '/acf-blocks/color-background.php' );
+            endif;
+
             if ( get_row_layout() == 'process_tabs' ):
                 include( get_stylesheet_directory() . '/acf-blocks/process-tabs.php' );
             endif;

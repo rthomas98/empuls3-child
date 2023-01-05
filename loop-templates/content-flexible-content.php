@@ -46,6 +46,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/img-background-cta.php' );
         endif;
 
+        if ( get_row_layout() == 'color_background' ):
+            include( get_stylesheet_directory() . '/acf-blocks/color-background.php' );
+        endif;
+
         if ( get_row_layout() == 'contact_header' ):
             include( get_stylesheet_directory() . '/acf-blocks/contact-header.php' );
         endif;
