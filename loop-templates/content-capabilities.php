@@ -30,6 +30,10 @@ defined( 'ABSPATH' ) || exit;
                 include( get_stylesheet_directory() . '/acf-blocks/simple-banner.php' );
             endif;
 
+            if ( get_row_layout() == 'pink_banner' ):
+                include( get_stylesheet_directory() . '/acf-blocks/pink-banner.php' );
+            endif;
+
             if ( get_row_layout() == 'images_slots' ):
                 include( get_stylesheet_directory() . '/acf-blocks/img-slots.php' );
             endif;

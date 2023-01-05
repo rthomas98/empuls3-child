@@ -17,6 +17,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/simple-banner.php' );
         endif;
 
+        if ( get_row_layout() == 'pink_banner' ):
+            include( get_stylesheet_directory() . '/acf-blocks/pink-banner.php' );
+        endif;
+
         if ( get_row_layout() == 'process_tabs' ):
             include( get_stylesheet_directory() . '/acf-blocks/process-tabs.php' );
         endif;
