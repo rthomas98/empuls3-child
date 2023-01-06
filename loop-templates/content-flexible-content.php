@@ -17,6 +17,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/simple-header.php' );
         endif;
 
+        if ( get_row_layout() == 'alt_content' ):
+            include( get_stylesheet_directory() . '/acf-blocks/alt-content.php' );
+        endif;
+
         if ( get_row_layout() == 'simple_banner' ):
             include( get_stylesheet_directory() . '/acf-blocks/simple-banner.php' );
         endif;

@@ -16450,4 +16450,22 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   color: #FFC259;
 }
 
+.alt-content h3, .alt-content .h3 {
+  color: #231B53;
+}
+.alt-content img {
+  border-radius: 20px;
+}
+.alt-content .stripe-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 0;
+}
+@media (max-width: 991.98px) {
+  .alt-content .stripe-right {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=child-theme.css.map */
