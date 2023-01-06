@@ -46,6 +46,10 @@ defined( 'ABSPATH' ) || exit;
                 include( get_stylesheet_directory() . '/acf-blocks/color-background.php' );
             endif;
 
+            if ( get_row_layout() == 'purple_banner' ):
+                include( get_stylesheet_directory() . '/acf-blocks/purple-banner.php' );
+            endif;
+
             if ( get_row_layout() == 'process_tabs' ):
                 include( get_stylesheet_directory() . '/acf-blocks/process-tabs.php' );
             endif;

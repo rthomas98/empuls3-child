@@ -50,6 +50,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/color-background.php' );
         endif;
 
+        if ( get_row_layout() == 'purple_banner' ):
+            include( get_stylesheet_directory() . '/acf-blocks/purple-banner.php' );
+        endif;
+
         if ( get_row_layout() == 'contact_header' ):
             include( get_stylesheet_directory() . '/acf-blocks/contact-header.php' );
         endif;
