@@ -30,9 +30,12 @@
 
             <div class="row d-flex align-items-center">
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <p class="lead" style="color: <?php the_sub_field( 'sub_header_color' ); ?>;">
-                        <?php the_sub_field( 'sub_header' ); ?>
-                    </p>
+                    <?php if( get_sub_field('sub_header') ): ?>
+                        <p class="lead" style="color: <?php the_sub_field( 'sub_header_color' ); ?>;">
+                            <?php the_sub_field( 'sub_header' ); ?>
+                        </p>
+                    <?php endif; ?>
+
                     <h2 class="display-4" style="color: <?php the_sub_field( 'header_color' ); ?>;">
                         <?php the_sub_field( 'header' ); ?>
                     </h2>

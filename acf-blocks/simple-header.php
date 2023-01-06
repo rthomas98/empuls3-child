@@ -1,4 +1,4 @@
-<section class="text-center simple-header py-5">
+<section class="text-center simple-banner py-5">
     <div class="container">
         <div class="row">
             <div class="col">
