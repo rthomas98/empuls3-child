@@ -42,6 +42,10 @@ if ( get_field( 'blocks' ) ) :
             include( get_stylesheet_directory() . '/acf-blocks/img-slots.php' );
         endif;
 
+        if ( get_row_layout() == 'horizontal_slots' ):
+            include( get_stylesheet_directory() . '/acf-blocks/horizontal-slots.php' );
+        endif;
+
         if ( get_row_layout() == 'image_background_cta' ):
             include( get_stylesheet_directory() . '/acf-blocks/img-background-cta.php' );
         endif;

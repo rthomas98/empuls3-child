@@ -42,6 +42,10 @@ defined( 'ABSPATH' ) || exit;
                 include( get_stylesheet_directory() . '/acf-blocks/img-background-cta.php' );
             endif;
 
+            if ( get_row_layout() == 'horizontal_slots' ):
+                include( get_stylesheet_directory() . '/acf-blocks/horizontal-slots.php' );
+            endif;
+
             if ( get_row_layout() == 'color_background' ):
                 include( get_stylesheet_directory() . '/acf-blocks/color-background.php' );
             endif;
