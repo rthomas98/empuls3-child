@@ -3769,7 +3769,7 @@
                             },
                             "layout": "table",
                             "min": 0,
-                            "max": 0,
+                            "max": 1,
                             "collapsed": "",
                             "button_label": "Add Row",
                             "rows_per_page": 20,
@@ -3910,7 +3910,7 @@
                                     "label": "Button Link",
                                     "name": "button_link",
                                     "aria-label": "",
-                                    "type": "page_link",
+                                    "type": "link",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -3919,11 +3919,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "post_type": "",
-                                    "taxonomy": "",
-                                    "allow_archives": 1,
-                                    "multiple": 0,
-                                    "allow_null": 0,
+                                    "return_format": "url",
                                     "parent_repeater": "field_639a5cec28330"
                                 }
                             ]
@@ -4695,5 +4691,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1673008604
+    "modified": 1673120558
 }
