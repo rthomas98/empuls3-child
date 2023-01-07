@@ -16175,6 +16175,22 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .testimonials .testimonial-content {
   position: relative;
 }
+.testimonials .testimonial-swiper {
+  width: 600px;
+  height: 300px;
+}
+.testimonials .testimonial-swiper .swiper-slide {
+  background-color: white;
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.testimonials .testimonial-swiper .swiper-slide .swiper-content h3, .testimonials .testimonial-swiper .swiper-slide .swiper-content .h3 {
+  color: #231B53;
+  font-size: 1.2em;
+}
 
 .contact-form {
   background-color: #F8F9FA;

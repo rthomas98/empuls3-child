@@ -6757,6 +6757,20 @@
 	    navbar.classList.remove("scrolled");
 	  }
 	};
+	new Swiper('.testimonial-swiper', {
+	  // Optional parameters
+	  direction: 'horizontal',
+	  loop: true,
+	  autoplay: {
+	    delay: 3000
+	  },
+	  pauseOnMouseEnter: true,
+	  spaceBetween: 100,
+	  // If we need pagination
+	  pagination: {
+	    el: '.swiper-pagination'
+	  }
+	});
 
 	exports.Alert = alert;
 	exports.Button = button;
