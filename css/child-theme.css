@@ -14969,6 +14969,20 @@ html, body {
   overflow-x: hidden;
 }
 
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 50px;
+  }
+  .main-nav {
+    background-color: white !important;
+    color: #9b9b9b;
+    transition: background 0.3s ease-out;
+  }
+  .main-nav .nav-link {
+    color: #9b9b9b;
+    text-align: center;
+  }
+}
 a {
   text-decoration: none;
 }
