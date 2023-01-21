@@ -3890,7 +3890,7 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .contact-form .fluentform .ff_btn_style, .contact-form form.fluent_form_3 .ff-btn-submit, .contact-header .fluentform .ff_btn_style, .contact-header form.fluent_form_3 .ff-btn-submit, .btn-group-lg > .btn, .wpcf7 .btn-group-lg > input[type=submit], .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
+.btn-lg, form .ff-btn-submit, .contact-form .fluentform .ff_btn_style, .contact-header .fluentform .ff_btn_style, .contact-header form.fluent_form_3 .ff-btn-submit, .btn-group-lg > .btn, .wpcf7 .btn-group-lg > input[type=submit], .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
@@ -4376,7 +4376,7 @@ textarea.form-control-lg {
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .contact-form .fluentform .ff_btn_style + .dropdown-toggle-split, .contact-form form.fluent_form_3 .ff-btn-submit + .dropdown-toggle-split, .contact-header .fluentform .ff_btn_style + .dropdown-toggle-split, .contact-header form.fluent_form_3 .ff-btn-submit + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .wpcf7 .btn-group-lg > input[type=submit] + .dropdown-toggle-split, .woocommerce-info .btn-group-lg > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, form .ff-btn-submit + .dropdown-toggle-split, .contact-form .fluentform .ff_btn_style + .dropdown-toggle-split, .contact-header .fluentform .ff_btn_style + .dropdown-toggle-split, .contact-header form.fluent_form_3 .ff-btn-submit + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .wpcf7 .btn-group-lg > input[type=submit] + .dropdown-toggle-split, .woocommerce-info .btn-group-lg > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -15032,7 +15032,7 @@ a {
   display: none;
 }
 
-.page-id-79 {
+.page-id-79, .page-id-508 {
   background-color: #F8F9FA;
 }
 
@@ -15509,6 +15509,9 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 .main-nav .nav-link:hover {
   color: #BD1550;
+}
+.main-nav .btn-primary .nav-link {
+  color: white !important;
 }
 
 .scrolled {
@@ -16331,13 +16334,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .contact-form .form-holder h2, .contact-form .form-holder .h2 {
   font-size: 1.75rem;
 }
-.contact-form form.fluent_form_3 .ff-btn-submit {
-  background-color: #FFC259;
-  color: #263645;
-  display: block;
-  width: 100%;
-  padding: 20px 20px;
-}
 .contact-form .fluentform .ff_btn_style {
   border-color: #FFC259;
 }
@@ -16357,6 +16353,14 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   .contact-form .circle-lg-x, .contact-form .stripe-right {
     display: none;
   }
+}
+
+form .ff-btn-submit {
+  background-color: #FFC259 !important;
+  color: #263645;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
 }
 
 .our-strengths {

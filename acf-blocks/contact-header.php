@@ -1,7 +1,7 @@
 <div class="contact-header py-5">
     <img class="stripe-left" src="<?php echo get_stylesheet_directory_uri(); ?>/img/stripe-left.svg" alt="a red line">
     <div class="container section-index pt-5">
-        <div class="row mb-5">
+        <div class="row mb-5 d-flex align-items-center">
             <div class="col-sm-12 col-md-12 col-lg-6 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
                 <p class="lead">
                     <?php the_sub_field( 'sub_header' ); ?>

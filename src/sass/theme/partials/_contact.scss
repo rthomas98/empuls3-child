@@ -15,15 +15,6 @@
     }
   }
 
-  form.fluent_form_3 .ff-btn-submit {
-    background-color: $yellow;
-    color: $black;
-    display: block;
-    width: 100%;
-    padding: 20px 20px;
-    @extend .btn-lg;
-  }
-
   .fluentform .ff_btn_style {
     border-color: $yellow;
     @extend .btn-lg;
@@ -49,4 +40,14 @@
     }
   }
 
+
+}
+
+form .ff-btn-submit {
+  background-color: $yellow !important;
+  color: $black;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  @extend .btn-lg;
 }

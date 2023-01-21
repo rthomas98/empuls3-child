@@ -28,6 +28,12 @@
             color: $pink;
         }
     }
+
+    .btn-primary {
+        .nav-link {
+            color: white !important;
+        }
+    }
 }
 
 .scrolled {
