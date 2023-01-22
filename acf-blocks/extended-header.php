@@ -2,7 +2,7 @@
     <img class="stripe-right" src="<?php echo get_stylesheet_directory_uri(); ?>/img/stripe-left.svg" alt="a red line">
     <div class="circle-lg-x"></div>
 
-    <div class="container section-index">
+    <div class="container section-index pt-5">
 
         <?php if ( have_rows( 'section_one' ) ) : ?>
         <div class="row d-flex align-items-center mb-5">

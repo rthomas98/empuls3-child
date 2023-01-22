@@ -3,7 +3,7 @@
     <div class="circle-md"></div>
     <div class="circle-lg"></div>
     <div class="container section-index">
-        <div class="row mb-5">
+        <div class="row">
             <div class="col">
                 <p class="lead">
                     <?php the_sub_field( 'sub_header' ); ?>
@@ -14,7 +14,7 @@
                 </h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row d-flex align-items-center">
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <?php if ( have_rows( 'strengths' ) ) : ?>
                 <?php while ( have_rows( 'strengths' ) ) : the_row(); ?>

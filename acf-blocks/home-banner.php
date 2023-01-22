@@ -6,8 +6,8 @@
 <div class="circle-lg"></div>
 
     <div class="row d-flex align-items-center">
-        <div class="col-sm-12 col-md-12 col-lg-6 p-sm-2 p-md-5 p-lg-5  section-index">
-            <h1 class="display-1">
+        <div class="col-sm-12 col-md-12 col-lg-7 p-sm-2 p-md-5 p-lg-5  section-index">
+            <h1 class="display-3">
                 <?php the_sub_field( 'section_header' ); ?>
             </h1>
             <p class="lead text-muted">
@@ -21,12 +21,36 @@
 
             
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 p-5 text-center">
+        <div class="col-sm-12 col-md-12 col-lg-5 p-5 text-center">
         <?php $image = get_sub_field( 'image' ); ?>
 			<?php if ( $image ) : ?>
 				<img class="home-img" src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
 			<?php endif; ?>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col text-center">
+            <p class="lead">
+                <?php the_sub_field( 'tech_ub_header' ); ?>
+            </p>
+            <h2>
+                <?php the_sub_field( 'tech_header' ); ?>
+            </h2>
+        </div>
+    </div>
+
+        <?php if ( have_rows( 'tech_icon' ) ) : ?>
+        <div class="row py-5 d-flex align-items-center">
+            <?php while ( have_rows( 'tech_icon' ) ) : the_row(); ?>
+            <div class="col text-center">
+                <i class="<?php the_sub_field( 'icon' ); ?>"></i>
+            </div>
+            <?php endwhile; ?>
+        </div>
+        <?php else : ?>
+            <?php // No rows found ?>
+        <?php endif; ?>
+
 
 </section>

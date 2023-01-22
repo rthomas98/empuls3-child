@@ -169,9 +169,49 @@
                             "preview_size": "medium"
                         },
                         {
-                            "key": "field_63c45cdd748cb",
-                            "label": "Logos",
-                            "name": "logos",
+                            "key": "field_63cd744edb73a",
+                            "label": "Tech Sub Header",
+                            "name": "tech_ub_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_63cd743fdb739",
+                            "label": "Tech Header",
+                            "name": "tech_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_63cd7459db73b",
+                            "label": "tech icon",
+                            "name": "tech_icon",
                             "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
@@ -190,11 +230,11 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63c45cf3748cc",
-                                    "label": "Logo",
-                                    "name": "logo",
+                                    "key": "field_63cd746adb73c",
+                                    "label": "Icon",
+                                    "name": "icon",
                                     "aria-label": "",
-                                    "type": "image",
+                                    "type": "text",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -203,17 +243,12 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "id",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": "",
-                                    "preview_size": "medium",
-                                    "parent_repeater": "field_63c45cdd748cb"
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63cd7459db73b"
                                 }
                             ]
                         }
@@ -4841,5 +4876,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1673999531
+    "modified": 1674409309
 }

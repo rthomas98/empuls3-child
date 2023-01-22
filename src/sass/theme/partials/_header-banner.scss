@@ -6,6 +6,15 @@
         z-index: 100;
     }
 
+    i {
+        font-size: 48px;
+        color: $grey;
+    }
+
+    .lead {
+        color: $pink;
+    }
+
     .grey-shape {
         position: absolute;
         top: 15%;
@@ -32,8 +41,8 @@
         height: 103px;
         width: 103px;
         position: absolute;
-        top: 3%;
-        right: 7%;
+        top: 11%;
+        right: 3%;
     }
 
     .circle-lg {
@@ -44,6 +53,7 @@
         top: 10%;
         left: 50%;
     }
+
 }
 
 @include media-breakpoint-down(md) {
