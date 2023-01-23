@@ -16471,7 +16471,7 @@ form .ff-btn-submit {
   -o-object-fit: cover;
   object-fit: cover;
 }
-.team .member h3, .team .member .h3 {
+.team .member h4, .team .member .h4 {
   color: #BD1550;
 }
 .team .member p {

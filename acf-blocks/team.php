@@ -16,7 +16,7 @@
         <?php if ( have_rows( 'member' ) ) : ?>
         <div class="row">
             <?php while ( have_rows( 'member' ) ) : the_row(); ?>
-                <div class="col-sm-12 col-md-12 col-lg-4 member text-center mb-5">
+                <div class="col-sm-12 col-md-12 col-lg-3 member text-center mb-5">
                 <?php
                 $image = get_sub_field( 'image' );
 
@@ -29,9 +29,9 @@
                     ?>
                     <p>No image was found.</p>
                 <?php endif; ?>
-                <h3>
+                <h4>
                     <?php the_sub_field( 'name' ); ?>
-                </h3>
+                </h4>
                 <p>
                     <?php the_sub_field( 'position' ); ?>
                 </p>
