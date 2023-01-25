@@ -25,7 +25,8 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
     />
     <?php wp_head(); ?>
 
-	<script src="https://kit.fontawesome.com/fc79b4295d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/fc79b4295d.js" crossorigin="anonymous"></script>
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>

@@ -1,9 +1,9 @@
 <section class="container-fluid py-5 home-banner">
 <img class="mt-4 grey-shape" src="<?php echo get_stylesheet_directory_uri(); ?>/img/grey-shape.svg" alt="a grey shape">
 
-<div class="circle-sm"></div>
-<div class="circle-md"></div>
-<div class="circle-lg"></div>
+<div class="circle-sm" data-aos="fade-in" data-aos-duration="4000"></div>
+<div class="circle-md" data-aos="fade-in"></div>
+<div class="circle-lg" data-aos="fade-in"></div>
 
     <div class="row d-flex align-items-center">
         <div class="col-sm-12 col-md-12 col-lg-7 p-sm-2 p-md-5 p-lg-5  section-index">
@@ -40,17 +40,19 @@
         </div>
     </div>
 
-        <?php if ( have_rows( 'tech_icon' ) ) : ?>
-        <div class="row py-5 d-flex align-items-center">
-            <?php while ( have_rows( 'tech_icon' ) ) : the_row(); ?>
-            <div class="col text-center">
-                <i class="<?php the_sub_field( 'icon' ); ?>"></i>
-            </div>
-            <?php endwhile; ?>
+        <div class="container">
+            <?php if ( have_rows( 'tech_icon' ) ) : ?>
+                <div class="row py-5 d-flex align-items-center">
+                    <?php while ( have_rows( 'tech_icon' ) ) : the_row(); ?>
+                        <div class="col text-center">
+                            <i class="<?php the_sub_field( 'icon' ); ?>"></i>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
+            <?php else : ?>
+                <?php // No rows found ?>
+            <?php endif; ?>
         </div>
-        <?php else : ?>
-            <?php // No rows found ?>
-        <?php endif; ?>
 
 
 </section>
