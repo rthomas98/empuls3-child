@@ -39,7 +39,7 @@
                                 <?php the_sub_field( 'content' ); ?>
                             </p>
 
-                            <a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="btn btn-primary" role="button">I want to know more</a>
+                            <a href="<?php echo esc_url( home_url( '/request-proposal' ) ); ?>" class="btn btn-primary" role="button">I want to know more</a>
                         </div>
                     </div>
 
