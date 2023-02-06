@@ -3890,7 +3890,7 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, form .ff-btn-submit, .contact-form .fluentform .ff_btn_style, .contact-header .fluentform .ff_btn_style, .contact-header form.fluent_form_3 .ff-btn-submit, .btn-group-lg > .btn, .wpcf7 .btn-group-lg > input[type=submit], .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
+.btn-lg, .fluentform .ff-btn-secondary, form .ff-btn-submit, .contact-form .fluentform .ff_btn_style, .contact-header .fluentform .ff_btn_style, .contact-header form.fluent_form_3 .ff-btn-submit, .btn-group-lg > .btn, .wpcf7 .btn-group-lg > input[type=submit], .woocommerce-info .btn-group-lg > a.button, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
@@ -4376,7 +4376,7 @@ textarea.form-control-lg {
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, form .ff-btn-submit + .dropdown-toggle-split, .contact-form .fluentform .ff_btn_style + .dropdown-toggle-split, .contact-header .fluentform .ff_btn_style + .dropdown-toggle-split, .contact-header form.fluent_form_3 .ff-btn-submit + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .wpcf7 .btn-group-lg > input[type=submit] + .dropdown-toggle-split, .woocommerce-info .btn-group-lg > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .fluentform .ff-btn-secondary + .dropdown-toggle-split, form .ff-btn-submit + .dropdown-toggle-split, .contact-form .fluentform .ff_btn_style + .dropdown-toggle-split, .contact-header .fluentform .ff_btn_style + .dropdown-toggle-split, .contact-header form.fluent_form_3 .ff-btn-submit + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .wpcf7 .btn-group-lg > input[type=submit] + .dropdown-toggle-split, .woocommerce-info .btn-group-lg > a.button + .dropdown-toggle-split, .woocommerce-notices-wrapper .woocommerce-message .btn-group-lg > a.button + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -16372,6 +16372,23 @@ form .ff-btn-submit {
   display: block;
   width: 100%;
   padding: 20px 20px;
+}
+
+.fluentform .ff-el-progress-bar {
+  background-color: #BD1550 !important;
+  color: #fff;
+  height: inherit;
+  text-align: right;
+  transition: width 0.3s;
+  width: 0;
+}
+
+.fluentform .ff-btn-secondary {
+  background-color: #231B53 !important;
+  color: white !important;
+  border-color: #231B53 !important;
+  padding: 5px 20px;
+  border-radius: 5px !important;
 }
 
 .our-strengths {

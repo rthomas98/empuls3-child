@@ -51,3 +51,21 @@ form .ff-btn-submit {
   padding: 20px 20px;
   @extend .btn-lg;
 }
+
+.fluentform .ff-el-progress-bar {
+  background-color: $pink !important;
+  color: #fff;
+  height: inherit;
+  text-align: right;
+  transition: width .3s;
+  width: 0;
+}
+
+.fluentform .ff-btn-secondary {
+  background-color: $purple !important;
+  color: white !important;
+  border-color: $purple !important;
+  padding: 5px 20px;
+  border-radius: 5px !important;
+  @extend .btn-lg;
+}
