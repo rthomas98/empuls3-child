@@ -15026,10 +15026,24 @@ a {
   .circle-sm, .circle-md, .circle-lg, .circle-lg-x {
     display: none;
   }
+  .btn, .wpcf7 input[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button {
+    width: 100%;
+  }
 }
 .section-index {
   z-index: 100;
   position: relative;
+}
+
+.single-case_study .btn-sm, .single-case_study .btn-group-sm > .btn, .single-case_study .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .single-case_study .btn-group-sm > input[type=submit], .single-case_study .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button, .woocommerce-notices-wrapper .woocommerce-message .single-case_study .btn-group-sm > a.button, .single-case_study .woocommerce-info .btn-group-sm > a.button, .woocommerce-info .single-case_study .btn-group-sm > a.button {
+  background-color: #FFC259;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.single-case_study .btn-sm:hover, .single-case_study .btn-group-sm > .btn:hover, .single-case_study .wpcf7 .btn-group-sm > input[type=submit]:hover, .wpcf7 .single-case_study .btn-group-sm > input[type=submit]:hover, .single-case_study .woocommerce-notices-wrapper .woocommerce-message .btn-group-sm > a.button:hover, .woocommerce-notices-wrapper .woocommerce-message .single-case_study .btn-group-sm > a.button:hover, .single-case_study .woocommerce-info .btn-group-sm > a.button:hover, .woocommerce-info .single-case_study .btn-group-sm > a.button:hover {
+  background-color: #BD1550;
+  color: #fff;
 }
 
 .page-id-75 .contact-form .circle-lg-x, .postid-72 .contact-form .circle-lg-x, .page-id-77 .contact-form .circle-lg-x {
@@ -15040,23 +15054,23 @@ a {
   background-color: #F8F9FA;
 }
 
-.postid-71 .main-nav .navbar-brand span, .postid-72 .main-nav .navbar-brand span, .postid-73 .main-nav .navbar-brand span, .blog .main-nav .navbar-brand span, .postid-70 .main-nav .navbar-brand span {
+.postid-71 .main-nav .navbar-brand span, .postid-72 .main-nav .navbar-brand span, .single .main-nav .navbar-brand span, .single-case_study .main-nav .navbar-brand span, .postid-73 .main-nav .navbar-brand span, .blog .main-nav .navbar-brand span, .postid-70 .main-nav .navbar-brand span {
   color: white;
 }
-.postid-71 .main-nav .nav-link, .postid-72 .main-nav .nav-link, .postid-73 .main-nav .nav-link, .blog .main-nav .nav-link, .postid-70 .main-nav .nav-link {
+.postid-71 .main-nav .nav-link, .postid-72 .main-nav .nav-link, .single .main-nav .nav-link, .single-case_study .main-nav .nav-link, .postid-73 .main-nav .nav-link, .blog .main-nav .nav-link, .postid-70 .main-nav .nav-link {
   color: white;
 }
 
-.postid-71 .scrolled .navbar-brand span, .postid-72 .scrolled .navbar-brand span, .postid-73 .scrolled .navbar-brand span, .blog .scrolled .navbar-brand span, .postid-70 .scrolled .navbar-brand span {
+.postid-71 .scrolled .navbar-brand span, .postid-72 .scrolled .navbar-brand span, .postid-73 .scrolled .navbar-brand span, .blog .scrolled .navbar-brand span, .postid-70 .scrolled .navbar-brand span, .single .scrolled .navbar-brand span, .single-case_study .scrolled .navbar-brand span {
   color: #263645 !important;
 }
-.postid-71 .scrolled .navbar-brand span:hover, .postid-72 .scrolled .navbar-brand span:hover, .postid-73 .scrolled .navbar-brand span:hover, .blog .scrolled .navbar-brand span:hover, .postid-70 .scrolled .navbar-brand span:hover {
+.postid-71 .scrolled .navbar-brand span:hover, .postid-72 .scrolled .navbar-brand span:hover, .postid-73 .scrolled .navbar-brand span:hover, .blog .scrolled .navbar-brand span:hover, .postid-70 .scrolled .navbar-brand span:hover, .single .scrolled .navbar-brand span:hover, .single-case_study .scrolled .navbar-brand span:hover {
   color: #BD1550 !important;
 }
-.postid-71 .scrolled .nav-link, .postid-72 .scrolled .nav-link, .postid-73 .scrolled .nav-link, .blog .scrolled .nav-link, .postid-70 .scrolled .nav-link {
+.postid-71 .scrolled .nav-link, .postid-72 .scrolled .nav-link, .postid-73 .scrolled .nav-link, .blog .scrolled .nav-link, .postid-70 .scrolled .nav-link, .single .scrolled .nav-link, .single-case_study .scrolled .nav-link {
   color: #263645 !important;
 }
-.postid-71 .scrolled .nav-link:hover, .postid-72 .scrolled .nav-link:hover, .postid-73 .scrolled .nav-link:hover, .blog .scrolled .nav-link:hover, .postid-70 .scrolled .nav-link:hover {
+.postid-71 .scrolled .nav-link:hover, .postid-72 .scrolled .nav-link:hover, .postid-73 .scrolled .nav-link:hover, .blog .scrolled .nav-link:hover, .postid-70 .scrolled .nav-link:hover, .single .scrolled .nav-link:hover, .single-case_study .scrolled .nav-link:hover {
   color: #BD1550 !important;
 }
 
@@ -16638,6 +16652,108 @@ form .ff-btn-submit {
 }
 @media (max-width: 991.98px) {
   .alt-content .stripe-right {
+    display: none;
+  }
+}
+
+.cs-hero {
+  background-color: #231B53;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  height: 75%;
+}
+@media (max-width: 991.98px) {
+  .cs-hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+  }
+}
+.cs-hero h1, .cs-hero .h1 {
+  color: #fff;
+}
+.cs-hero p {
+  color: #fff;
+}
+
+.case-info .stripe-right {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: 10;
+}
+@media (max-width: 991.98px) {
+  .case-info .stripe-right {
+    display: none;
+  }
+}
+
+.testimonial-holder {
+  background-color: #FFC259;
+}
+
+.footer-cta-single {
+  background: linear-gradient(180deg, #231B53 80%, #ffffff 20%);
+}
+.footer-cta-single h2, .footer-cta-single .h2 {
+  color: white;
+  z-index: 100;
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 991.98px) {
+  .footer-cta-single h2, .footer-cta-single .h2 {
+    width: 100%;
+  }
+}
+.footer-cta-single .footer-btn {
+  z-index: 100;
+}
+.footer-cta-single .lead {
+  color: #FFC259;
+  font-weight: 300;
+  z-index: 100;
+}
+.footer-cta-single .guy {
+  width: 700px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.footer-cta-single .stripe-right {
+  position: absolute;
+  right: 0;
+  top: 9%;
+  z-index: 0;
+}
+.footer-cta-single .circle-sm {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  z-index: 0;
+}
+.footer-cta-single .circle-md {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  z-index: 0;
+}
+.footer-cta-single .circle-lg {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  z-index: 0;
+}
+.footer-cta-single .circle-lg-x {
+  position: absolute;
+  top: 14%;
+  left: -10%;
+  width: 350px;
+  height: 350px;
+  z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+  .footer-cta .circle-sm, .footer-cta .circle-md, .footer-cta .circle-lg, .footer-cta .circle-lg-x, .footer-cta .stripe-right {
     display: none;
   }
 }

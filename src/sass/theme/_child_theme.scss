@@ -61,11 +61,27 @@ a {
   .circle-sm, .circle-md, .circle-lg, .circle-lg-x {
     display: none;
   }
+
+  .btn {
+    width: 100%;
+  }
 }
 
 .section-index {
   z-index: 100;
   position: relative;
+}
+
+.single-case_study .btn-sm {
+  background-color: $yellow;
+  color: $white;
+  border: none;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
 }
 
 .page-id-75, .postid-72, .page-id-77 {
@@ -80,7 +96,7 @@ a {
   background-color: $light-grey;
 }
 
-.postid-71, .postid-72, .postid-73, .blog, .postid-70 {
+.postid-71, .postid-72, .single, .single-case_study, .postid-73, .blog, .postid-70 {
   .main-nav .navbar-brand span {
     color: white;
   }
@@ -91,7 +107,7 @@ a {
 
 }
 
-.postid-71, .postid-72, .postid-73, .blog, .postid-70 {
+.postid-71, .postid-72, .postid-73, .blog, .postid-70, .single, .single-case_study {
   .scrolled .navbar-brand span {
     color: $black !important;
 
@@ -109,3 +125,4 @@ a {
     }
   }
 }
+

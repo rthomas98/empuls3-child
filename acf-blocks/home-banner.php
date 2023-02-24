@@ -5,7 +5,7 @@
 <div class="circle-md" data-aos="fade-in"></div>
 <div class="circle-lg" data-aos="fade-in"></div>
 
-    <div class="row d-flex align-items-center">
+    <div class="row d-flex align-items-center p-4 p-sm-3 p-md-0 p-lg-0">
         <div class="col-sm-12 col-md-12 col-lg-7 p-sm-2 p-md-5 p-lg-5  section-index">
             <h1 class="display-3">
                 <?php the_sub_field( 'section_header' ); ?>
